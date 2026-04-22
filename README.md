@@ -18,15 +18,14 @@ Blank-input friendly filters support flexible stock/date queries
 Automated statistics and visualization complete end-to-end analysis in seconds
 Dual-mode design ensures stable demonstration both online and offline
 # 5. How to Run
-Local Execution
-Install dependencies:
-pip install -r requirements.txt
-Launch the app:
-streamlit run app.py
-Open in browser: http://localhost:8501
-WRDS Mode Requirements
-Valid WRDS account
-University institutional VPN connection
+1.Open Anaconda Prompt/Command Prompt, and navigate to the folder where app.py and requirements.txt are located
+2.Install all required Python packages:pip install -r requirements.txt
+3.Start the Streamlit local server:streamlit run app.py
+4.If successful, your browser will open automatically.
+If not, copy the Local URL shown in your terminal (default: http://localhost:8501) and paste it into your browser address bar
+5.WRDS Mode Prerequisites
+A valid WRDS account with CRSP database access permissions
+Connection to your university's institutional VPN (required for off-campus access)
 # 6. Product Link / Demo
 Live App: [YOUR STREAMLIT CLOUD LINK]
 GitHub Repo: [YOUR GITHUB LINK]
