@@ -1,35 +1,43 @@
 # Interactive-Financial-Data-Analysis-Tool
-# Problem & User (1–2 sentences)
-This tool delivers an intuitive, code-free interactive interface for finance students and academic researchers to access, explore, and visualize professional US stock market data. It solves the barrier of complex SQL and Python coding for exploratory financial data analysis, supporting both WRDS academic database and local CSV file inputs.
-# Data (source + access date + key fields)
-Primary Data Source: CRSP (Center for Research in Security Prices) Daily Stock File (dsf) via Wharton Research Data Services (WRDS)
-Secondary Data Support: User-uploaded local CSV files for custom dataset analysis
-Access Date: Real-time data access as of April 2026, with flexible user-defined date range filtering
-Key Core Fields:
-permno: Permanent unique identifier for US stocks
-date: Daily trading date
-prc: Closing price of the stock
-ret: Daily total return of the stock
-vol: Daily trading volume
-shrout: Shares outstanding for the stock
-# Methods (main Python steps)
-Built interactive web interface and user workflow using the Streamlit framework, with dual data source mode selection
-Integrated WRDS Python API to establish secure database connections, with dynamic SQL query generation for flexible stock and date filtering
-Leveraged Pandas for data cleaning, preprocessing, and automated descriptive statistical analysis of the pulled/uploaded dataset
-Implemented customizable data visualization with Matplotlib, enabling users to select X/Y axis variables for scatter plot generation
-Used Streamlit session state to cache loaded data, avoiding repeated database queries and improving user experience
-# Key Findings (3–5 bullets)
-The tool enables one-click access to professional WRDS financial data, eliminating the need for manual SQL coding for basic exploratory analysis
-The dual-mode design ensures consistent functionality: WRDS mode for academic financial data, and CSV mode for universal custom dataset analysis
-The flexible filter system (supporting blank inputs for no filtering) adapts to diverse analysis needs, from single-stock deep dive to full-market data exploration
-Automated statistics and visualization reduce the technical barrier for non-technical users to complete end-to-end financial data analysis in minutes
-# How to run (optional but valuable)
-Local Environment Setup
-Clone or download the full repository to your local device
-Open your terminal/Anaconda Prompt, and navigate to the project root folder
-Install all required dependencies with the command:pip install -r requirements.txt
-Launch the Streamlit application with the command:streamlit run app.py
-Access the tool via your browser at the automatically generated local URL (default: http://localhost:8501)
-Prerequisite for WRDS Mode
-A valid WRDS account with CRSP database access permissions
-Connection to your university's institutional VPN (required for off-campus WRDS access)
+# 1. Problem & User
+This interactive tool provides a code-free interface for finance students and academic researchers to quickly access, analyze, and visualize U.S. stock market data. It lowers the technical barrier for financial data exploration by supporting both professional WRDS database queries and local CSV file analysis.
+# 2. Data
+Source: CRSP Daily Stock File (dsf) via WRDS (Wharton Research Data Services); local CSV upload supported
+Access Date: Real-time data query (April 2026)
+Key Fields: permno (stock ID), date (trading date), prc (price), ret (return), vol (volume), shrout (shares outstanding)
+Sample Data: Small stock dataset stored in /data/sample_stock_data.csv
+# 3. Methods
+Built interactive web application using Streamlit
+Connected to WRDS database with dynamic SQL query (supports blank filters)
+Data processing & statistics with Pandas
+Custom scatter plot visualization with Matplotlib
+Dual-mode support: WRDS data pull + local CSV analysis
+# 4. Key Findings
+The tool enables one-click professional financial data access without manual SQL coding
+Blank-input friendly filters support flexible stock/date queries
+Automated statistics and visualization complete end-to-end analysis in seconds
+Dual-mode design ensures stable demonstration both online and offline
+# 5. How to Run
+Local Execution
+Install dependencies:
+pip install -r requirements.txt
+Launch the app:
+streamlit run app.py
+Open in browser: http://localhost:8501
+WRDS Mode Requirements
+Valid WRDS account
+University institutional VPN connection
+# 6. Product Link / Demo
+Live App: [YOUR STREAMLIT CLOUD LINK]
+GitHub Repo: [YOUR GITHUB LINK]
+Demo Video: [YOUR VIDEO LINK]
+# 7. Limitations & Next Steps
+Limitations
+Only scatter plot visualization supported
+Data limited to 10,000 rows for performance
+WRDS access requires institutional account & VPN
+Next Steps
+Add time-series charts & financial indicators
+Integrate Compustat financial data
+Support data export to CSV/Excel
+Optimize large-data query performance
