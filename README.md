@@ -27,8 +27,7 @@ If not, copy the Local URL shown in your terminal (default: http://localhost:850
 A valid WRDS account with CRSP database access permissions.
 Connection to your university's institutional VPN (required for off-campus access).
 # 6. Product Link / Demo
-Live App: [YOUR STREAMLIT CLOUD LINK]
-GitHub Repo: [YOUR GITHUB LINK]
+GitHub Repo: https://github.com/zhiyuan051024/Interactive-Financial-Data-Analysis-Tool.git
 Demo Video: [YOUR VIDEO LINK]
 # 7. Limitations & Next Steps
 Limitations:
