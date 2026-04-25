@@ -28,7 +28,7 @@ A valid WRDS account with CRSP database access permissions.
 Connection to your university's institutional VPN (required for off-campus access).
 # 6. Product Link / Demo
 GitHub Repo: https://github.com/zhiyuan051024/Interactive-Financial-Data-Analysis-Tool.git
-Demo Video: [YOUR VIDEO LINK]
+Demo Video: https://www.bilibili.com/video/BV1WyoSBRESP/?vd_source=04eeef7e37cc1a60c548dc24d655ce09
 # 7. Limitations & Next Steps
 Limitations:
 Only scatter plot visualization supported.
